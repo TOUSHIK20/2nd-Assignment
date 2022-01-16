@@ -26,6 +26,25 @@
 .left h1{
     font-size: 80px;
 }
+.left p{
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+.section-title{
+    font-size: 50px;
+    padding: 50px 0;
+}
+
+.collection{
+    background-color: #f7f7f7;
+   padding: 10px;
+}
+.collection-banner{
+    width:100%;
+}
+
 
 
 
@@ -46,11 +65,17 @@ h2{
 .collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px; 
+    grid-column-gap: 50px; 
+    
+} 
+
+.collection{
+    margin: 10px 0;
+    border-radius: 5px;;
 } 
 .collection-banner img{
-    width: 300px;
-    height: 256px;
+    width: 100%;
+    
 }
 .collection-rating{
     display: flex;
@@ -74,3 +99,21 @@ h2{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+/* Media Queries */
+@media only screen and (max-width: 950px) {
+    .first-section{
+        grid-template-columns: 1fr ;
+    }
+    .collections{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    
+    .collections{
+        grid-template-columns: 1fr;
+    }
+  }
